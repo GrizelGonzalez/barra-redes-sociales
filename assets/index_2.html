@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar,Editar,Eliminar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fa2aeafceb.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            height: 215px;
+            width: 215px;
+            margin: 300px 600px;
+            
+        }
+        .container:hover .add {
+            transform: translateX(120px) translateY(-70px);
+            /*transform: translateX(150px);*/
+
+        }
+        .container:hover .edit{
+            transform: translateX(150px);
+            /*transform: translateX(120px) translateY(70px);*/
+
+        }
+        .container:hover .delete{
+            transform: translateX(120px) translateY(70px);
+            /*transform: translateX(120px) translateY(-70px);*/
+
+        }
+        a{
+            border: 2px solid white;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            color: #20b2aa;
+            text-decoration: none;
+            transition: 1.5s;
+        }
+        
+        .add {
+            background: #dfe4e9;
+        }
+        .edit {
+            background-color: #dfe4e9;
+        }
+        .delete {
+            background: #dfe4e9;
+        }
+        .menu {
+            background: #d5e8fa;
+            height: 60px;
+            width: 60px;
+            margin: -10px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="add"><i class="fas fa-user-plus"></i></a>
+        <a href="#" class="edit"><i class="fas fa-edit"></i></a>
+        <a href="#" class="delete"><i class="fas fa-trash-alt"></i></a>
+        <a href="#" class="menu"><i class="fas fa-plus-square"></i></a>
+    </div>
+    
+</body>
+</html>
